@@ -1,0 +1,284 @@
+:root {
+  --bg-color: #111827;
+  --bg-color-transparent: #11182781;
+  --darker-bg: #0b101a;
+  --lighter-bg: #1F2937;
+  --accent-bg: #0C4A6E;
+  --fg-color: #F9FAFB;
+  --fg-dimmed: #D1D5DB;
+  --accent-color: #0EA5E9;
+  --error: #EF4444;
+}
+
+@import "./fonts/inter.css";
+
+* {
+  outline: none;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14pt;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.blue-headline {
+  font-size: 1.5em;
+  margin: 0 0 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent-color);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 35px 0 5px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 25px 0 5px;
+}
+
+h4 {
+  margin: 15px 0 5px;
+}
+
+p {
+  margin: 0 0 10px;
+  color: var(--fg-dimmed);
+}
+
+.limited-p {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  margin: 5px 0 15px;
+  color: var(--fg-dimmed);
+}
+
+details {
+  margin-bottom: 10px;
+  transition: 200ms ease-in-out;
+  border: 2px solid var(--lighter-bg);
+
+  summary {
+    background-color: var(--bg-color);
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    transition: 200ms ease-in-out;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+
+  div {
+    padding: 20px;
+  }
+}
+
+
+.flat-list {
+  padding: 0;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.flat-list li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: 200ms ease-in-out;
+}
+
+.alt-link {
+  color: inherit;
+  border: none;
+}
+
+.alt-link:hover {
+  color: var(--accent-color);
+  border: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-section {
+  padding: 40px 20px;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px 0;
+}
+
+.row .padding-col:first-of-type {
+  padding-left: 0;
+}
+
+.row .padding-col:last-of-type {
+  padding-right: 0;
+}
+
+.column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.col-3 {
+  max-width: 33.3%;
+}
+
+.padding-col {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: var(--lighter-bg);
+  transition: 200ms ease-in-out;
+}
+
+.box:hover {
+  background-color: var(--accent-bg);
+}
+
+.box h1 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+}
+
+.box p,
+.box a {
+  font-size: .8em;
+}
+
+.btn {
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 5px;
+  border: 2px solid var(--accent-color);
+  font-weight: 700;
+  margin: 10px;
+  transition: 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--fg-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em !important;
+  margin: 0 5px 0;
+  border-radius: 36px;
+  border: none;
+}
+
+.social-btn>* {
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background-color: var(--fg-color);
+  border: none;
+}
+
+.footer {
+  background-color: var(--darker-bg);
+  font-size: .8em;
+  padding: 60px 0;
+}
+
+.footer h1 {
+  font-weight: 600;
+  margin: 0 0 5px;
+  font-size: 1.2em;
+}
+
+.darker {
+  opacity: .8;
+}
+
+.small-img {
+  width: 70px;
+  height: 70px;
+  margin: 0 0 20px;
+}
+
+.address {
+  font-family: 'Courier New', Courier, monospace;
+  cursor: text;
+  padding: 0 20px;
+}
+
+.screen-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#regeln, #top, #impressum, #datenschutz {
+  background:
+    linear-gradient(var(--bg-color-transparent), var(--bg-color-transparent)),
+    url('../static/images/teich.png');
+  background-size: cover;
+  background-position: center;
+}
