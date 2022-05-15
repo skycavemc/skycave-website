@@ -21,7 +21,7 @@ const IndexPage = () => {
               <div className="box">
                 <img
                   className="small-img"
-                  src="../../static/images/statistics.png"
+                  src="./images/statistics.png"
                   alt="Voten"
                 />
                 <h1>Voten</h1>
@@ -59,7 +59,7 @@ const IndexPage = () => {
               <div className="box">
                 <img
                   className="small-img"
-                  src="../../static/images/game.png"
+                  src="./images/game.png"
                   alt="Regeln"
                 />
                 <h1>Joinen</h1>
@@ -75,7 +75,7 @@ const IndexPage = () => {
               <div className="box">
                 <img
                   className="small-img"
-                  src="../../static/images/notification-bell.png"
+                  src="./images/notification-bell.png"
                   alt="Social Media"
                 />
                 <h1>Social Media</h1>
