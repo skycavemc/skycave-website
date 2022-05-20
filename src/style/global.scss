@@ -1,16 +1,21 @@
 :root {
-  --bg-color: #111827;
-  --bg-color-transparent: #11182781;
+  --bg-color: #212121;
+  --bg-color-transparent: #21212149;
   --darker-bg: #0b101a;
   --lighter-bg: #1F2937;
   --accent-bg: #0C4A6E;
   --fg-color: #F9FAFB;
   --fg-dimmed: #D1D5DB;
-  --accent-color: #0EA5E9;
+  --accent-color: #2196F3;
   --error: #EF4444;
+
+  --default-transition: 200ms ease-in-out;
 }
 
-@import "./fonts/inter.css";
+@import url('https://fonts.googleapis.com/css2' +
+  '?family=Inter:wght@100;200;300;400;500;600;700;800;900' +
+  '&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900' +
+  '&family=Smooch&display=swap');
 
 * {
   outline: none;
@@ -20,23 +25,15 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
   background-color: var(--bg-color);
   color: var(--fg-color);
 }
 
 h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;
   font-size: 3em;
-  margin: 0;
-}
-
-.blue-headline {
-  font-size: 1.5em;
-  margin: 0 0 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  color: var(--accent-color);
 }
 
 h2 {
@@ -68,59 +65,106 @@ ul, ol {
   color: var(--fg-dimmed);
 }
 
-details {
-  margin-bottom: 10px;
-  transition: 200ms ease-in-out;
-  border: 2px solid var(--lighter-bg);
-
-  summary {
-    background-color: var(--bg-color);
-    cursor: pointer;
-    position: sticky;
-    top: 0;
-    transition: 200ms ease-in-out;
-    padding: 10px;
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-
-  div {
-    padding: 20px;
-  }
-}
-
-
-.flat-list {
-  padding: 0;
-  opacity: 1;
-  font-weight: 500;
-}
-
-.flat-list li {
-  list-style: none;
-}
-
 a {
   cursor: pointer;
   text-decoration: none;
   color: var(--accent-color);
-  transition: 200ms ease-in-out;
+  transition: var(--default-transition);
 }
 
-.alt-link {
-  color: inherit;
-  border: none;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+  }
+
+  a {
+    color: var(--fg-color);
+    font-weight: 400;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
 }
 
-.alt-link:hover {
+.fancy-headline {
+  font-size: 5em;
+  margin: 0;
+}
+
+.fancy-subheadline {
+  font-family: 'Smooch', cursive;
+  font-weight: 400;
   color: var(--accent-color);
-  border: none;
+  margin: 0 0 -40px;
+  font-size: 2.5em;
+  transform: translate(80px, -30px);
+}
+
+.fancy-after {
+  margin: 20px auto 40px;
+  font-weight: 500;
+  max-width: 700px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-area {
+  a {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 50px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: var(--default-transition);
+    font-weight: 600;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.blue-cta {
+  color: var(--fg-color);
+  background-color: var(--accent-color);
+}
+
+.white-cta {
+  color: black;
+  background-color: var(--fg-color);
 }
 
 section {
+  padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blue-section {
+  background-color: #0D47A1;
 }
 
 .padding-section {
@@ -129,6 +173,7 @@ section {
 
 .full-height {
   min-height: 100vh;
+  padding: 0;
 }
 
 .container {
@@ -178,13 +223,55 @@ section {
   box-sizing: border-box;
 }
 
+details {
+  margin-bottom: 10px;
+  transition: var(--default-transition);
+  border: 2px solid var(--lighter-bg);
+
+  summary {
+    background-color: var(--bg-color);
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    transition: var(--default-transition);
+    padding: 10px;
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+
+  div {
+    padding: 20px;
+  }
+}
+
+
+.flat-list {
+  padding: 0;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.flat-list li {
+  list-style: none;
+}
+
+.alt-link {
+  color: inherit;
+  border: none;
+}
+
+.alt-link:hover {
+  color: var(--accent-color);
+  border: none;
+}
+
 .box {
   width: 100%;
   height: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
   background-color: var(--lighter-bg);
-  transition: 200ms ease-in-out;
+  transition: var(--default-transition);
 }
 
 .box:hover {
@@ -210,7 +297,7 @@ section {
   border: 2px solid var(--accent-color);
   font-weight: 700;
   margin: 10px;
-  transition: 200ms ease-in-out;
+  transition: var(--default-transition);
 }
 
 .btn:hover {
@@ -243,7 +330,10 @@ section {
 .footer {
   background-color: var(--darker-bg);
   font-size: .8em;
-  padding: 60px 0;
+
+  p {
+    margin: 0;
+  }
 }
 
 .footer h1 {
@@ -281,4 +371,5 @@ section {
     url('../../static/images/teich.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
