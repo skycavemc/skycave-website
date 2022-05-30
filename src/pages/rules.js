@@ -128,19 +128,7 @@ const Rules = () => {
                 <li>Spam [Def. 1], Caps o.Ä. sind untersagt.</li>
                 <li>Das Umgehen vom Chatfilter ist untersagt.</li>
                 <li>
-                  Der Handelschat:
-                  <ul>
-                    <li>hat einen Cooldown von 15 Minuten.</li>
-                    <li>
-                      Das muss hinein: Usershops, Inseln ( /iswarp xyz, /warp
-                      xyz), Nachfrage und Angebote von Items, Dienstleistungen,
-                      verschenken von Items.
-                    </li>
-                    <li>
-                      Das muss nicht hinein: Nachfrage von Preisen, Antwort auf
-                      Angebot (kann im global oder msg beantwortet werden).
-                    </li>
-                  </ul>
+                  Der Handelschat hat einen Cooldown von 15 Minuten und ist zum Hervorheben von Handelsangeboten vorgesehen.
                 </li>
                 <li>
                   Der Eventchat (/e) ist für Spielerevents gedacht (bsp.
@@ -334,8 +322,8 @@ const Rules = () => {
                   (davon max. 3 Eisengolem Spawner).
                 </li>
                 <li>
-                  Herkömmliche Eisenfarmen mit Dorfbewohnern als Mechanik werden
-                  jeweils als ein Eisengolem Spawner gezählt.
+                  Herkömmliche Eisenfarmen mit Dorfbewohnern werden jeweils als
+                  ein Eisengolem Spawner gezählt.
                 </li>
                 <li>
                   Normale Mobfarmen (mit einem dunklen Raum als Spawnbereich)
@@ -343,16 +331,21 @@ const Rules = () => {
                   nicht überschreiten (entspricht max. 32x32 Blöcken).
                 </li>
                 <li>
-                  Es dürfen höchstens 12 Villager pro Insel für Farming
+                  Es dürfen höchstens 12 Dorfbewohner pro Insel für Farming
                   eingesetzt werden.
                 </li>
                 <li>
-                  Lange Trichterwege müssen mit Inventarblöcken überdeckt werden
-                  (bsp.: Komposter, Ofen).
+                  Dörfer oder sogenannte Breeder (Zuchtmaschinen) müssen umzäunt
+                  oder eingebaut sein, sodass die Dorfbewohner den Chunk nicht
+                  verlassen können. Es dürfen maximal 8 Betten verbaut werden.
                 </li>
                 <li>
-                  Der Nether darf ausschließlich für Farmen genutzt werden, die
-                  Items generieren, welche nur im Nether gefunden werden können.
+                  Lange Trichterwege müssen mit den levelbaren Trichtern
+                  übergangen werden.
+                </li>
+                <li>
+                  Der Nether darf nicht für (halb-)automatische Farmen genutzt
+                  werden, alle Items müssen manuell gefarmt werden.
                 </li>
               </ol>
 
@@ -360,10 +353,10 @@ const Rules = () => {
               <ol>
                 <li>Der Betrug (Scam) von Usern ist verboten.</li>
                 <li>
-                  Mutwillige Zerstörung von Inseln kann nur erfolgen, wenn der
-                  Täter dementsprechende Rechte von Eigentümer erhalten hat.
-                  Demnach ist der Eigentümer selbst für den Schaden
-                  verantwortlich und es gibt keinen Anspruch auf Ersatz.
+                  Der Eigentümer einer Insel ist selbst für den Schaden
+                  verantwortlich, den andere Spieler auf seiner Insel
+                  verrichten. Nur wenn es feste Beweismittel gibt, werden Items
+                  erstattet.
                 </li>
                 <li>
                   Ein Spieler darf den Server mit maximal 5 verschiedenen
@@ -378,21 +371,21 @@ const Rules = () => {
                 </li>
                 <li>
                   Jeder ist für seinen Account selbst verantwortlich. Falls also
-                  eine Dritter mit dem Account eines Spielers gegen die Regeln
-                  verstößt, wird trotzdem die jeweilige Strafe verhängt.
+                  eine andere Person auf dem Account gegen die Regeln verstößt,
+                  wird trotzdem die jeweilige Strafe verhängt.
                 </li>
                 <li>
                   Das hinterlistige Töten in Skyblock ist verboten. Dazu gehören
                   beispielsweise Spawnfallen.
                 </li>
                 <li>
-                  Die Benutzung automatisierter Funktionen oder Bots ist
-                  verboten.
+                  Das automatisierte Ausführen von Aktionen durch Skripte oder
+                  Bots ist verboten.
                 </li>
                 <li>
-                  Unvorgesehene Fehler in unserem System, sogenannte Bugs, sind
-                  unverzüglich einem Teammitglied zu melden. Deren Ausnutzung
-                  ist strengstens untersagt.
+                  Bugs und Fehler auf unserem Server sind unverzüglich einem
+                  Teammitglied zu melden. Deren Ausnutzung ist strengstens
+                  untersagt.
                 </li>
               </ol>
             </div>
