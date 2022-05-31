@@ -160,7 +160,12 @@ const IndexPage = () => {
             <div className="column-centered">
               <p>
                 © {new Date().getFullYear()} by SkyCave.de |{" "}
-                <a href="/rules" className="alt-link">
+                <a
+                  href="https://skycave.gitbook.io/skyblock/regelwerk"
+                  className="alt-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Regeln
                 </a>{" "}
                 |{" "}
