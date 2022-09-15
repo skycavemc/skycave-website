@@ -13,7 +13,7 @@ const IndexPage = () => {
               <h3 className="fancy-after">
                 Wir bieten seit 2015 das beste Rundum-Erlebnis für SkyBlock im
                 deutschsprachigen Raum. Einsteigerfreundlich, auf allen
-                Plattformen und immer aktuell! Schließe dich noch heute an.
+                Plattformen und immer aktuell! Schließe dich uns noch heute an.
               </h3>
               <div className="cta-area">
                 <a href="#why-us" className="blue-cta">

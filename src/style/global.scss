@@ -1,6 +1,6 @@
 :root {
   --bg-color: #212121;
-  --bg-color-transparent: #21212149;
+  --bg-color-transparent: #2121217c;
   --darker-bg: #0b101a;
   --lighter-bg: #1F2937;
   --accent-bg: #0C4A6E;
@@ -164,7 +164,7 @@ section {
 }
 
 .blue-section {
-  background-color: #0D47A1;
+  background-color: var(--accent-color);
 }
 
 .padding-section {
