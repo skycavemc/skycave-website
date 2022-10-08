@@ -10,15 +10,15 @@ const Layout = ({ children }) => {
       caption: "Home",
     },
     {
-      link: "#vote",
-      caption: "Voten",
-    },
-    {
       link: "#join",
       caption: "Joinen",
     },
     {
-      link: "/",
+      link: "#vote",
+      caption: "Voten",
+    },
+    {
+      link: "https://skycave.gitbook.io/skyblock/regelwerk",
       caption: "Regeln",
     },
     {

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout.js";
+import join from "../../static/images/join.png";
 
 const IndexPage = () => {
   return (
@@ -28,11 +29,25 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="blue-section">
+      <section>
         <div className="container">
           <div className="row">
-            <div className="column-centered">
-              <h1>Gute Gründe für uns</h1>
+            <div className="column-left col-2 col-center-v">
+              <h1>Joinen</h1>
+              <p>
+                Unser Server ist rund um die Uhr für jeden zugänglich. Und das auf allen Geräten: PC, Handy, XBox, Switch, und alle weiteren!
+              </p>
+              <p>
+                Nutze dafür die neuste Minecraft Version (1.19.2 für die Java Edition) und füge den Server mit der adresse skycave.de hinzu.
+              </p>
+            </div>
+            <div className="column-right col-2 col-center-v">
+              <img src={join} alt="skycave.de" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="column-right">
+              <h1>Voten</h1>
             </div>
           </div>
         </div>
@@ -59,6 +74,6 @@ const IndexPage = () => {
       </section>
     </Layout>
   );
-}
+};
 
 export default IndexPage;
