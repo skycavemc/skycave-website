@@ -68,7 +68,7 @@ const IndexPage = () => {
                   1.16.4. Trage unter Multiplayer die folgende Adresse für
                   unseren Server ein:
                 </p>
-                <span className="address">skycave.de:25565</span>
+                <span className="address">skycave.de</span>
               </div>
             </div>
             <div className="column-centered col-3 padding-col">
