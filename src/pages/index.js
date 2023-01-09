@@ -65,7 +65,7 @@ const IndexPage = () => {
                 <h1>Joinen</h1>
                 <p>
                   Um auf unserem Server zu spielen, brauchst du mindestens die
-                  1.16.4. Trage unter Multiplayer die folgende Adresse für
+                  1.19.3. Trage unter Multiplayer die folgende Adresse für
                   unseren Server ein:
                 </p>
                 <span className="address">skycave.de</span>
